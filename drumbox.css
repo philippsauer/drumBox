@@ -1,0 +1,45 @@
+html,
+body {
+  font-family: Helvetica, Arial, Geneva, sans-serif;
+  height: 100%;
+}
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+.flex-container {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+.flex-item {
+  z-index: 1;
+  flex: 0 1 auto;
+  align-self: auto;
+}
+.box {
+  border: 3px solid #d55c5c;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: coral;
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+  display: flex;
+}
+.box span {
+  padding: 16px 18px;
+}
+.box.active {
+  background-color: bisque;
+  border: 3px solid darkred;
+}
